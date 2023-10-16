@@ -34,10 +34,6 @@ io.on("connection",(socket)=>{
         })
     })
 
-    console.log("New connection")
-
-    
-
     //When a user disconnects
     socket.on("disconnect",()=>{
         const user = userLeave(socket.id)
